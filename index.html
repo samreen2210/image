@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head"> MY GALLERY</div>
+    <div class="full-img" id="fullimgBox">
+        <img src="" id="fullimg">
+        <span onclick="closeFullImg()">X</span>
+        <!-- Add the navigation arrows -->
+        <svg id="prevImg" onclick="prevImage()" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 19l-7-7 7-7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg id="nextImg" onclick="nextImage()" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5l7 7-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="img-gallery">
+        <a href="https://youtu.be/k397HRbTtWI" target="_blank">
+            <img src="https://youtu.be/k397HRbTtWI" alt="Video Thumbnail" style="position:relative;">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); font-size:30px; color:white;">▶</div>
+
+        
+        <img src="https://weliveentertainment.com/wp-content/uploads/2017/03/Boss-Baby.jpg" onclick="openFullImg(this.src)">
+    </a>
+        <img src="https://imageio.forbes.com/specials-images/imageserve/64fc77b93d9abb399e1a5641/Artistic-close-up-of--a-beautiful-black-woman-/960x0.jpg?height=920&width=711&fit=bounds" onclick="openFullImg(this.src)">
+        <img src="https://thumbs.dreamstime.com/b/businessman-red-umbrella-others-unique-different-concept-business-man-red-umbrella-others-unique-different-119333394.jpg" onclick="openFullImg(this.src)">
+        <img src="https://cdn.shopify.com/s/files/1/0076/3147/0662/files/Food_Photography___How_to_Take_Unique_and_Creative_Food_Photos_11.jpg?v=1661151189" onclick="openFullImg(this.src)">
+        <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/535b071f-a943-404b-a4ee-fcc19646f9cf/52.jpg" onclick="openFullImg(this.src)">
+        <img src="https://www.fruitsmith.com/pub/media/mageplaza/blog/post/s/e/seedless_fruits.jpg" onclick="openFullImg(this.src)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2tXI5DjxldBskR-Y9KnVPDqIbq1FSHr0-WhJbCqdbNKAu_pn1TbnXluGr7ujLWfl2AuU&usqp=CAU" onclick="openFullImg(this.src)">
+        <img src="https://t4.ftcdn.net/jpg/06/78/55/13/360_F_678551360_wQ7yXMeKs19NaQm3EG5xrAZTRdj8yVUm.jpg" onclick="openFullImg(this.src)">
+        <img src="https://static.vecteezy.com/system/resources/previews/032/838/015/non_2x/tranquil-scene-green-meadow-flowing-water-blossoms-reflect-natural-beauty-generated-by-ai-photo.jpg" onclick="openFullImg(this.src)">
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head"> MY GALLERY</div>
+    <div class="full-img" id="fullimgBox">
+        <img src="" id="fullimg">
+        <span onclick="closeFullImg()">X</span>
+        <!-- Add the navigation arrows -->
+        <!-- <svg id="prevImg" onclick="prevImage()" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 19l-7-7 7-7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg id="nextImg" onclick="nextImage()" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5l7 7-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+    <div class="img-gallery">
+        <img src="https://weliveentertainment.com/wp-content/uploads/2017/03/Boss-Baby.jpg" onclick="openFullImg(this.src)">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/64fc77b93d9abb399e1a5641/Artistic-close-up-of--a-beautiful-black-woman-/960x0.jpg?height=920&width=711&fit=bounds" onclick="openFullImg(this.src)">
+        <img src="https://thumbs.dreamstime.com/b/businessman-red-umbrella-others-unique-different-concept-business-man-red-umbrella-others-unique-different-119333394.jpg" onclick="openFullImg(this.src)">
+        <img src="https://cdn.shopify.com/s/files/1/0076/3147/0662/files/Food_Photography___How_to_Take_Unique_and_Creative_Food_Photos_11.jpg?v=1661151189" onclick="openFullImg(this.src)">
+        <img src="https://archive.smashing.media/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/535b071f-a943-404b-a4ee-fcc19646f9cf/52.jpg" onclick="openFullImg(this.src)">
+        <img src="https://www.fruitsmith.com/pub/media/mageplaza/blog/post/s/e/seedless_fruits.jpg" onclick="openFullImg(this.src)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2tXI5DjxldBskR-Y9KnVPDqIbq1FSHr0-WhJbCqdbNKAu_pn1TbnXluGr7ujLWfl2AuU&usqp=CAU" onclick="openFullImg(this.src)">
+        <img src="https://t4.ftcdn.net/jpg/06/78/55/13/360_F_678551360_wQ7yXMeKs19NaQm3EG5xrAZTRdj8yVUm.jpg" onclick="openFullImg(this.src)">
+        <img src="https://static.vecteezy.com/system/resources/previews/032/838/015/non_2x/tranquil-scene-green-meadow-flowing-water-blossoms-reflect-natural-beauty-generated-by-ai-photo.jpg" onclick="openFullImg(this.src)">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+ --> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
